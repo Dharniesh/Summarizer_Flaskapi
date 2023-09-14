@@ -1,6 +1,6 @@
 streamlit
 openai
-dotenv
+python-dotenv
 tiktoken
 git+https://github.com/openai/whisper.git
 flask
