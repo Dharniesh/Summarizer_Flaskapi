@@ -7,10 +7,9 @@ from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 import os
 # from config import api_key
-load_dotenv()
 app = Flask(__name__)
 
-openai.api_key = os.environ.get('api_key')
+openai.api_key=st.secrets['api_key']
 encoding = tiktoken.encoding_for_model("gpt-3.5-turbo-16k")
 
 def chunker(text, max_tokens=200):
