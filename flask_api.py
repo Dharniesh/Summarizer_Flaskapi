@@ -4,7 +4,6 @@ import subprocess
 import tiktoken
 from flask import Flask, request, jsonify
 from werkzeug.utils import secure_filename
-from dotenv import load_dotenv
 import os
 # from config import api_key
 app = Flask(__name__)
