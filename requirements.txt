@@ -2,3 +2,4 @@ streamlit
 openai
 tiktoken
 git+https://github.com/openai/whisper.git
+flask
