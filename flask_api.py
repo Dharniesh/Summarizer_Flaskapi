@@ -9,7 +9,7 @@ import streamlit as st
 # from config import api_key
 app = Flask(__name__)
 
-openai.api_key=st.secrets['openai_api']
+openai.api_key=openai_api
 encoding = tiktoken.encoding_for_model("gpt-3.5-turbo-16k")
 
 def chunker(text, max_tokens=200):
